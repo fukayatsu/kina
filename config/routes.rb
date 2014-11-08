@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'pages#index'
   namespace :api do
     constraints format: :json do
       resources :users, only: [], param: :name do
