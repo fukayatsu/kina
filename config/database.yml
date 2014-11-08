@@ -22,5 +22,4 @@ test:
   database: kina_test
 
 production:
-  <<: *default
-  database: kina_production
+  url: <%= ENV["DATABASE_URL"] %>
